@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 529e65d09e9001a45b56c947b58e2728
+timeCreated: 1524295157
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: LeftWalk_1
+    21300002: LeftWalk_2
+    21300004: LeftWalk_3
+    21300006: RightWalk_1
+    21300008: RightWalk_2
+    21300010: RightWalk_3
+    21300012: Jump
+    21300014: Idle
+    21300016: Character_8
+    21300018: Gun
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 15
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: LeftWalk_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 269
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LeftWalk_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 269
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LeftWalk_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 269
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RightWalk_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 175
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RightWalk_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 175
+        width: 25
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RightWalk_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 175
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jump
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 81
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 81
+        width: 24
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Character_8
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 133
+        width: 24
+        height: 6
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Gun
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 91
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
