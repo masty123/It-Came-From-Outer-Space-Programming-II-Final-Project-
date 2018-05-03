@@ -123,11 +123,13 @@
 
             // Multiply the player's x local scale by -1.
             Vector3 theScale = playerGraphics.localScale;
-            Vector3 armScale = playerArm.localScale;
             theScale.x *= -1;
-             armScale.x *= -1;
             playerGraphics.localScale = theScale;
-            playerArm.localScale = armScale;
-             Debug.Log("Flippingggg");
+
+
+            Vector3 theArm = playerArm.localScale;
+            theArm.x *= -1;
+            playerArm.localScale = theArm;
+            Debug.Log("Flipping");
         }
     }
