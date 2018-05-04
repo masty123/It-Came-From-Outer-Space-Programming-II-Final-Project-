@@ -21,16 +21,21 @@ public class Weapon : MonoBehaviour {
 
 	float timeToFire = 0 ;  
 	Transform firePoint; 	//Store firePoint.
+	Transform endPoint;     // gun transform
+
 
     //Caching
     AudioManager audioManager;
+
      
 	// Use this for initialization
 	void Awake () {
 		firePoint = transform.Find("FirePoint");
-		if (firePoint == null) {
-			Debug.LogError ("No firepoint?? dafuq?");
-		}
+		endPoint = transform.Find("EndPoint");
+
+		if (firePoint == null || endPoint == null) Debug.LogError ("No firepoint?? dafuq?");
+
+	
 	}
 
     void Start()
@@ -48,12 +53,12 @@ public class Weapon : MonoBehaviour {
 	//If left click, the gun will fire
 	void Update () {
 		if (fireRate == 0) {
-			if (Input.GetKeyDown (KeyCode.K)){
+			if (Input.GetKeyDown (KeyCode.G)){
 				Shoot();
 			}
 		}
 		else {
-				if (Input.GetKeyDown(KeyCode.K) && Time.time > timeToFire){
+				if (Input.GetKeyDown(KeyCode.G) && Time.time > timeToFire){
 					timeToFire = Time.time + 1/fireRate;
 					Shoot();
 				}
@@ -62,8 +67,11 @@ public class Weapon : MonoBehaviour {
 
 	//Make the bullet come out of the gun.
 	void Shoot () {
-		Vector2 mousePosition = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint  (Input.mousePosition).y);
-        Vector2 firePointPosition = new Vector2 (firePoint.position.x, firePoint.position.y);
+		//Vector2 mousePosition = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint  (Input.mousePosition).y);
+		Vector2 mousePosition = new Vector2 (endPoint.position.x,endPoint.position.y);
+
+        
+		Vector2 firePointPosition = new Vector2 (firePoint.position.x, firePoint.position.y);
 		RaycastHit2D hit = Physics2D.Raycast (firePointPosition, mousePosition - firePointPosition, 100, whatToHit);
 	
 
@@ -75,7 +83,7 @@ public class Weapon : MonoBehaviour {
 			if(enemy != null){
 				enemy.DamageEnemy(Damage);
 			}
-		}
+		}	
 
         if (Time.time >= timeToSpawnEffect)
         {

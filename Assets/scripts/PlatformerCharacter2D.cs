@@ -131,5 +131,6 @@
             theArm.x *= -1;
             playerArm.localScale = theArm;
             Debug.Log("Flipping");
+			
         }
     }

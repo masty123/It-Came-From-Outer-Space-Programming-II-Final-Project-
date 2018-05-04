@@ -122,11 +122,11 @@ public class GameMaster : MonoBehaviour {
 
     public static void KillEnemy (Enemy enemy)
     {
-        gm._KillEnemey(enemy);
+        gm._KillEnemy(enemy);
 	}
 
     //non static method
-    public void _KillEnemey(Enemy _enemy)
+    public void _KillEnemy(Enemy _enemy)
     {
         //Play some sound
         audioManager.PlaySound(_enemy.deathSoundName);

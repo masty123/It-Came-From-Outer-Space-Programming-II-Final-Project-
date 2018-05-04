@@ -26,6 +26,11 @@ public class MenuManager : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+	public void StartGame2 () {
+		audioManager.PlaySound(pressButtonSound);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+	}
+
 
     public void QuitGame()
     {

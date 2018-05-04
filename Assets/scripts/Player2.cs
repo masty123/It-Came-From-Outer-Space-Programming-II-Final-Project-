@@ -18,11 +18,11 @@ public class Player2 : MonoBehaviour
     [SerializeField]
     private StatusIndicator statusIndicator;
 
-    private PlayerStats stats;
+    private Player2Stats stats;
 
     void Start()
     {
-        stats = PlayerStats.instance;
+        stats = Player2Stats.instance;
         stats.curHealth = stats.maxHealth;
 
         if (statusIndicator == null)
