@@ -23,7 +23,9 @@ public class WaveSpawner : MonoBehaviour {
         }
     }
 
-    public Wave[] waves;
+    public Wave waves;
+    public int waveSize;
+    private int enemySize = 1;
     private int nextWave = 0;
     public int NextWave
     {
@@ -39,7 +41,7 @@ public class WaveSpawner : MonoBehaviour {
     {
         get { return waveCountdown; }
     }
-        
+    
     private float searchCountdown = 1f;
 
     private SpawnState state = SpawnState.COUNTING;
@@ -51,6 +53,7 @@ public class WaveSpawner : MonoBehaviour {
      
    void Start()
     {
+    
         if (spawnPoints.Length == 0)
         {
             Debug.Log("No spawn points referenced");
@@ -80,7 +83,11 @@ public class WaveSpawner : MonoBehaviour {
             if (state != SpawnState.SPAWNING)
             {
                 // Start spawning wave
-                StartCoroutine( SpawnWave (waves[nextWave]));
+                StartCoroutine( SpawnWave (waves));
+                if (nextWave + 1 <= waveSize)
+                {
+                   waves.setCount(waves.count + enemySize);
+                }
             }
         }
         else
@@ -95,7 +102,7 @@ public class WaveSpawner : MonoBehaviour {
 
         state = SpawnState.COUNTING;
         waveCountdown = timeBetweenWaves;
-        if(nextWave + 1 > waves.Length - 1)
+        if(nextWave + 1 > waveSize)
         {
             nextWave = 0;
             Debug.Log("All wave Completed! Start Looping...");
@@ -146,5 +153,9 @@ public class WaveSpawner : MonoBehaviour {
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)];
         Instantiate(_enemy, _sp.position, _sp.rotation);
     }
+
+
+
+
 
 }

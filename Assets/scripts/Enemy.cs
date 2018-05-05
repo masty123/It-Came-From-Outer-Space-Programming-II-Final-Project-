@@ -104,9 +104,6 @@ public class Enemy : MonoBehaviour {
 
      void OnDestroy()
     {   
-
-        
         GameMaster.gm.OnToggleUpgradeMenu -= OnUpgradeMenuToggle;
-
     }
 }

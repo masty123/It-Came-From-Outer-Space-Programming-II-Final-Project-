@@ -41,7 +41,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-	private void  insertScore(string name, int newScore) {
+	private void insertScore(string name, int newScore) {
 		using(IDbConnection dbConnection = new SqliteConnection(connectionString))
 		{
 			dbConnection.Open();
