@@ -168,16 +168,7 @@ public class GameMaster : MonoBehaviour {
 
     void togglePause()
     {
-        if (pause)
-        {
-            Time.timeScale = 1f;
-            pause = false;
-        }
-        else
-        {
-            Time.timeScale = 0f;
-            pause = true;
-        }
+            Time.timeScale = 0f;       
     }
 
     public void EndGame()
