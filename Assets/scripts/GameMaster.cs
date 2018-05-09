@@ -31,6 +31,7 @@ public class GameMaster : MonoBehaviour {
 	public Transform spawnPrefab;
     public string respawnCountdownSoundName = "RespawnCountdown";
     public string spawnSoundName = "Spawn";
+    
 
     public string gameOverSoundName = "GameOver";
 
@@ -44,6 +45,9 @@ public class GameMaster : MonoBehaviour {
 
     [SerializeField]
     private WaveSpawner waveSpawner;
+
+    private bool pause = true;
+
 
 
 
@@ -162,11 +166,26 @@ public class GameMaster : MonoBehaviour {
         OnToggleUpgradeMenu.Invoke(upgradeMenu.activeSelf);
     }
 
+    void togglePause()
+    {
+        if (pause)
+        {
+            Time.timeScale = 1f;
+            pause = false;
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            pause = true;
+        }
+    }
+
     public void EndGame()
     {
         audioManager.PlaySound("GameOver");
         Debug.Log("GAME OVER");
         gameOverUI.SetActive(true);
+        togglePause();
 
     }
 
