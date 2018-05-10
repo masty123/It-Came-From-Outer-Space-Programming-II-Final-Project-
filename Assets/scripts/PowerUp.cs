@@ -24,6 +24,10 @@ public class PowerUp : MonoBehaviour {
         {
             StartCoroutine(Pickup(other));
         }
+        else if (other.CompareTag("Player2"))
+        {
+            StartCoroutine(PickupForPlayer2(other));
+        }
     }
 
 
@@ -35,7 +39,6 @@ public class PowerUp : MonoBehaviour {
         // Apply effect to the player
         player.transform.localScale *= multiplier;
         player.GetComponent<PlayerStats>();
-        player.GetComponent<Player2Stats>();
         stats.maxHealth = (int)(stats.maxHealth * multiplier);
         stats.curHealth = stats.maxHealth;
         
@@ -57,6 +60,39 @@ public class PowerUp : MonoBehaviour {
         stats.curHealth = result;
         stats.maxHealth = result;
     
+        Debug.Log(result);
+        Destroy(gameObject);
+    }
+
+
+    IEnumerator PickupForPlayer2(Collider2D player)
+    {
+        // Spawn a cool effect
+        Instantiate(pickupEffect, transform.position, transform.rotation);
+        // Apply effect to the player
+        player.transform.localScale *= multiplier;
+        player.GetComponent<Player2Stats>();
+        stats2.maxHealth = (int)(stats.maxHealth * multiplier);
+        stats2.curHealth = stats2.maxHealth;
+
+        //Disable texture
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
+
+
+
+
+        //Wait x amount of seconds
+        yield return new WaitForSeconds(duration);
+
+        //Reverse the effect on our player
+        Debug.Log("reversing");
+        player.transform.localScale /= multiplier;
+        float temp = stats.curHealth;
+        int result = (int)Mathf.Ceil((temp /= multiplier));
+        stats2.curHealth = result;
+        stats2.maxHealth = result;
+
         Debug.Log(result);
         Destroy(gameObject);
     }
