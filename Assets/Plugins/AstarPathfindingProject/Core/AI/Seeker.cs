@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Pathfinding;
 using System.Diagnostics;
 
+
 [AddComponentMenu ("Pathfinding/Seeker")]
 /** Handles path calls for a single unit.
  * \ingroup relevant
@@ -316,48 +317,6 @@ public class Seeker : MonoBehaviour {
 		AstarProfiler.EndProfile ();
 	}
 	
-	
-	/*public void OnEnable () {
-		//AstarPath.OnGraphsUpdated += CheckPathValidity;
-	}
-	
-	public void OnDisable () {
-		//AstarPath.OnGraphsUpdated -= CheckPathValidity;
-	}*/
-	
-	/*public void CheckPathValidity (AstarPath active) {
-		
-		/*if (!recalcOnGraphChange) {
-			return;
-		}
-		
-		
-		
-		//Debug.Log ("Checking Path Validity");
-		//Debug.Break ();
-		if (lastCompletedPath != null && !lastCompletedPath.error) {
-			//Debug.Log ("Checking Path Validity");
-			StartPath (transform.position,lastCompletedPath.endPoint);
-			
-			/*if (!lastCompletedPath.path[0].IsWalkable (lastCompletedPath)) {
-				StartPath (transform.position,lastCompletedPath.endPoint);
-				return;
-			}
-				
-			for (int i=0;i<lastCompletedPath.path.Length-1;i++) {
-				
-				if (!lastCompletedPath.path[i].ContainsConnection (lastCompletedPath.path[i+1],lastCompletedPath)) {
-					StartPath (transform.position,lastCompletedPath.endPoint);
-					return;
-				}
-				Debug.DrawLine (lastCompletedPath.path[i].position,lastCompletedPath.path[i+1].position,Color.cyan);
-			}*
-		}*
-	}*/
-	
-	//The frame the last call was made from this Seeker
-	//private int lastPathCall = -1000;
-	
 	/** Returns a new path instance. The path will be taken from the path pool if path recycling is turned on.\n
 	 * This path can be sent to #StartPath(Path,OnPathDelegate,int) with no change, but if no change is required #StartPath(Vector3,Vector3,OnPathDelegate) does just that.
 	 * \code Seeker seeker = GetComponent (typeof(Seeker)) as Seeker;
@@ -399,7 +358,7 @@ public class Seeker : MonoBehaviour {
 	 * \a Callback will not be called if the path is canceled (e.g when a new path is requested before the previous one has completed) */
 	public Path StartPath (Vector3 start, Vector3 end, OnPathDelegate callback, int graphMask) {
 		Path p = GetNewPath (start,end);
-		return StartPath (p, callback, graphMask);
+        return StartPath (p, callback, graphMask);
 	}
 	
 	/** Call this function to start calculating a path.

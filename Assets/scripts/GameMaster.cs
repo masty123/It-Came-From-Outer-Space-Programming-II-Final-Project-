@@ -49,9 +49,6 @@ public class GameMaster : MonoBehaviour {
     private bool pause = true;
 
 
-
-
-
     public delegate void UpgradeMenuCallBack(bool active);
     public UpgradeMenuCallBack OnToggleUpgradeMenu;
 
@@ -73,7 +70,6 @@ public class GameMaster : MonoBehaviour {
 
     }
 
- 
 
 	public IEnumerator RespawnPlayer (){
         audioManager.PlaySound(respawnCountdownSoundName);
