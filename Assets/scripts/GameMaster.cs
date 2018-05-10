@@ -71,26 +71,22 @@ public class GameMaster : MonoBehaviour {
     }
 
 
-	public IEnumerator RespawnPlayer (){
+	public IEnumerator RespawnPlayer (int playerNum){
         audioManager.PlaySound(respawnCountdownSoundName);
         yield return new WaitForSeconds(spawnDelay);
 
         audioManager.PlaySound(spawnSoundName);
-		Instantiate (playerPrefab, spawnPoint.position, spawnPoint.rotation);
+        if (playerNum == 1)
+        {
+            Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+        }
+	    else if (playerNum == 2)
+        {
+            Instantiate(player2Prefab, spawnPoint.position, spawnPoint.rotation);
+        }
         GameObject clone = Instantiate  (spawnPrefab.gameObject, spawnPoint.position, spawnPoint.rotation);
 		Destroy (clone, 3f);
 	}
-
-    public IEnumerator RespawnPlayer2()
-    {
-        audioManager.PlaySound(respawnCountdownSoundName);
-        yield return new WaitForSeconds(spawnDelay);
-
-        audioManager.PlaySound(spawnSoundName);
-        Instantiate(player2Prefab, spawnPoint.position, spawnPoint.rotation);
-        GameObject clone = Instantiate(spawnPrefab.gameObject, spawnPoint.position, spawnPoint.rotation);
-        Destroy(clone, 3f);
-    }
 
     //make it static so, we don't want to reference the gamemaster everytime we want to kill the player
     public static void KillPlayer (Player player) {
@@ -102,7 +98,7 @@ public class GameMaster : MonoBehaviour {
         }
         else
         {
-            gm.StartCoroutine(gm.RespawnPlayer());
+            gm.StartCoroutine(gm.RespawnPlayer(1));
         }
     }
 
@@ -116,7 +112,7 @@ public class GameMaster : MonoBehaviour {
         }
         else
         {
-            gm.StartCoroutine(gm.RespawnPlayer2());
+            gm.StartCoroutine(gm.RespawnPlayer(2));
         }
     }
 

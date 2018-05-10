@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2Stats : MonoBehaviour {
+public class Player2Stats :MonoBehaviour {
 
-	public static Player2Stats instance;
+	public static Player2Stats instance ;
 
 	public int maxHealth = 100;
 

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnitySampleAssets._2D;
 
-[RequireComponent(typeof(Player2Controller))]
+[RequireComponent(typeof(Platformer2DUserControl))]
 public class Player2 : MonoBehaviour
 {
 
@@ -60,7 +60,7 @@ public class Player2 : MonoBehaviour
     void OnUpgradeMenuToggle(bool active)
     {
         // handle what happens the upgrade menu is toggled.
-        GetComponent<Player2Controller>().enabled = !active;
+        GetComponent<Platformer2DUserControl> ().enabled = !active;
         Weapon _weapon = GetComponentInChildren<Weapon>();
         if (_weapon != null) _weapon.enabled = !active;
     }

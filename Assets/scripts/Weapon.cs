@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour {
 	public int Damage = 10;  
 	public LayerMask whatToHit; 		//It will tell us what we want to hit.
 
+    public int weaponNumber;
 	public Transform BulletTrailPrefab;
     public Transform HitPrefab;
 	public Transform MuzzleFlashPrefab;
@@ -19,6 +20,7 @@ public class Weapon : MonoBehaviour {
 
     public string weaponShootSound = "DefaultShot";
 
+    private KeyCode keyCode;
 	float timeToFire = 0 ;  
 	Transform firePoint; 	//Store firePoint.
 	Transform endPoint;     // gun transform
@@ -52,13 +54,21 @@ public class Weapon : MonoBehaviour {
 
 	//If left click, the gun will fire
 	void Update () {
+        if(weaponNumber== 2)
+        {
+            keyCode = KeyCode.M;
+        }
+        else if(weaponNumber == 1)
+        {
+            keyCode = KeyCode.G;
+        }
 		if (fireRate == 0) {
-			if (Input.GetKeyDown (KeyCode.G)){
+			if (Input.GetKeyDown (keyCode)){
 				Shoot();
 			}
 		}
 		else {
-				if (Input.GetKeyDown(KeyCode.G) && Time.time > timeToFire){
+				if (Input.GetKeyDown(keyCode) && Time.time > timeToFire){
 					timeToFire = Time.time + 1/fireRate;
 					Shoot();
 				}

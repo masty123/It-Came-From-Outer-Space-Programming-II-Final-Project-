@@ -8,7 +8,7 @@ public class Player : MonoBehaviour {
 
 
 	public int fallBoundary = -20 ;
-
+    public int playerNumber;
     public string deathSoundName = "DeathVoice";
     public string damageSoundName = "Grunt";
 
