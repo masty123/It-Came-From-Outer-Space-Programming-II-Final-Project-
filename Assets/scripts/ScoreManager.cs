@@ -17,6 +17,7 @@ public class ScoreManager : MonoBehaviour
 	public Transform scoreParent;
 
     public Text nameFromInput;
+    private int sizeOfHighscore;
 
 	// Use this for initialization
 	void Start ()
@@ -95,7 +96,15 @@ public class ScoreManager : MonoBehaviour
         clearBoard();
 		highscore.Sort ();
 		highscore.Reverse ();
-		for (int i = 0; i < 10 ; i++){
+        if(highscore.Count > 10)
+        {
+            sizeOfHighscore = 10;
+        }
+        else
+        {
+            sizeOfHighscore = highscore.Count;
+        }
+		for (int i = 0; i < sizeOfHighscore ; i++){
 			GameObject tmpObject = Instantiate(scorePrefab);
 			HighScore tmpScore = highscore[i];
 

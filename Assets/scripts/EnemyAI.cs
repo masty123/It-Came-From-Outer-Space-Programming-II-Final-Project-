@@ -66,7 +66,7 @@ public class EnemyAI : MonoBehaviour {
 	}
 
 	IEnumerator UpdatePath (){
-		if (target == null) {
+        if (target == null) {
 			if (!searchingForPlayer){
 				searchingForPlayer = true ;
 				StartCoroutine (SearchForPlayer());
@@ -74,8 +74,8 @@ public class EnemyAI : MonoBehaviour {
             yield return false;
         }
 
-		//Start a new path to the target position, return the result to the OnPathComplete method.
-		seeker.StartPath (transform.position, target.position, OnPathComplete);
+        //Start a new path to the target position, return the result to the OnPathComplete method.
+        seeker.StartPath (transform.position, target.position, OnPathComplete);
 		yield return new WaitForSeconds (1f/ updateRate);
 		StartCoroutine (UpdatePath ());
 	}
