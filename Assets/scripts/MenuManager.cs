@@ -23,19 +23,24 @@ public class MenuManager : MonoBehaviour {
 
     public void StartGame () {
         audioManager.PlaySound(pressButtonSound);
+        audioManager.StopSound("Music");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       
     }
 
 	public void StartGame2 () {
 		audioManager.PlaySound(pressButtonSound);
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-	}
+        audioManager.StopSound("Music");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+       
+    }
 
 
     public void QuitGame()
     {
         audioManager.PlaySound(pressButtonSound);
         Debug.Log("Closing Application");
+        audioManager.StopSound("Music");
         Application.Quit();
     }
 

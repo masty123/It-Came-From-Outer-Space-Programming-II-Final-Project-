@@ -33,7 +33,6 @@ public class GameOverUI : MonoBehaviour {
     public void Retry()
     {
         audioManager.PlaySound(buttonPressSound);
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         int scene = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
         Time.timeScale = 1;
@@ -43,7 +42,4 @@ public class GameOverUI : MonoBehaviour {
     {
         audioManager.PlaySound(mouseHoverSound);
     }
-
-
-
 }

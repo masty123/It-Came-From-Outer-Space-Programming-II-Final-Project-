@@ -32,8 +32,10 @@ public class UpgradeMenu : MonoBehaviour {
 
     void UpdateValues()
     {
-        healthText.text = "HEALTH: "+ stats.maxHealth.ToString();
-        speedText.text = "SPEED: "+ stats.movementSpeed.ToString();
+        if (stats != null) {
+            healthText.text = "HEALTH: " + stats.maxHealth.ToString();
+            speedText.text = "SPEED: " + stats.movementSpeed.ToString();
+        }
     }
 
     public void UpgradeHealth()

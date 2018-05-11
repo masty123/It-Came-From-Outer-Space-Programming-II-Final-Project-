@@ -19,6 +19,7 @@ public class Sound {
 
     private AudioSource source;
 
+
     public void SetSource(AudioSource _source)
     {
         source = _source;
@@ -29,7 +30,6 @@ public class Sound {
     public void Play()
     {
         source.volume = volume * (1 + Random.Range(-randomVolume / 2f, randomVolume/ 2f));
-        //source.pitch = pitch * (1 + Random.Range(-randomPitch / 2f, randomPitch / 2f));
         source.Play();
     }
 
@@ -56,7 +56,7 @@ public class AudioManager : MonoBehaviour{
         else
         {
             instance = this;
-            DontDestroyOnLoad(this); 
+            //DontDestroyOnLoad(this); 
         }
     }
 
@@ -76,12 +76,17 @@ public class AudioManager : MonoBehaviour{
     {
         for (int i = 0; i < sounds.Length; i++)
         {
-            if (sounds[i].name == _name)
+            
+
+
+                if (sounds[i].name == _name)
             {
+                
                 sounds[i].Play();
                 return;
             }
         }
+
         // no sound with _name
         Debug.LogWarning("AudioManager: Sound not found in list, " + _name);
     }
@@ -89,7 +94,7 @@ public class AudioManager : MonoBehaviour{
     public void StopSound(string _name)
     {
         for (int i = 0; i < sounds.Length; i++)
-        {
+        {   
             if (sounds[i].name == _name)
             {
                 sounds[i].Stop();
