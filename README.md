@@ -25,13 +25,13 @@ Game Over
 
 
 ### Installation
-1. Download the runnable file
+Download the zip file
 
 | PC | MacOS |Linux|
 |:----------------:|:-----------:|:-----------:|
 |[here]()         |[here]()   |[here]()|
 
-2. Install the file
+ Install the file
  - For PC - Extract and run the .exe file
  - For MacOS -
  - For Linux -
@@ -39,4 +39,3 @@ Game Over
 
 ### How To Play
 ![GUI](ImagePreview/HowToPlay.PNG)
-
