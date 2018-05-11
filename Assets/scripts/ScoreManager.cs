@@ -15,6 +15,8 @@ public class ScoreManager : MonoBehaviour
 	public GameObject scorePrefab;
 
 	public Transform scoreParent;
+    public InputField inputFieledName;
+    public Button enterButton;
 
     public Text nameFromInput;
     private int sizeOfHighscore;
@@ -22,8 +24,9 @@ public class ScoreManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
-		connectionString = "URI=file:" + Application.dataPath + "/HighScoreDB.db";
+        if (inputFieledName.enabled == false) inputFieledName.enabled = true;
+        if (enterButton.enabled == false) enterButton.enabled = true;
+        connectionString = "URI=file:" + Application.dataPath + "/HighScoreDB.db";
 		ShowScore ();
 	}
 	
@@ -38,6 +41,9 @@ public class ScoreManager : MonoBehaviour
         {
             insertScore(nameFromInput.text, GameMaster.Score);
             nameFromInput.text = string.Empty;
+            inputFieledName.enabled = false;
+            enterButton.enabled = false;
+
             ShowScore();
         }
     }
