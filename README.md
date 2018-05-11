@@ -13,7 +13,7 @@ Two Player
 
 Main menu
 
-![GUI](ImagePreview/MainMenupreview.PNG)
+![GUI](ImagePreview/MainMenupreview2.PNG)
 
 Game Over
 
