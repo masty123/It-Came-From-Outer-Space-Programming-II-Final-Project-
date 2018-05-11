@@ -2,6 +2,9 @@
 using Pathfinding;
 using System.Collections;
 
+/*
+ *EnemyAI find path for the Enemy to move to the Player.
+ */
 [RequireComponent (typeof (Rigidbody2D))]
 [RequireComponent (typeof (Seeker))]
 public class EnemyAI : MonoBehaviour {
@@ -51,6 +54,9 @@ public class EnemyAI : MonoBehaviour {
 		StartCoroutine(UpdatePath ());
 	}
 
+    /*
+     *Find any GameObject that have tag "Player". 
+     */
 	IEnumerator SearchForPlayer (){
 		GameObject sResult = GameObject.FindGameObjectWithTag ("Player");
 

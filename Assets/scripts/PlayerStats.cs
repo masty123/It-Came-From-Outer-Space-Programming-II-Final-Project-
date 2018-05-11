@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+/**
+ * PlayerStat collect all status of player
+ * Maximum health ,Movement speed and regenary rate.
+ */
 [System.Serializable]
 public class PlayerStats : MonoBehaviour
 {

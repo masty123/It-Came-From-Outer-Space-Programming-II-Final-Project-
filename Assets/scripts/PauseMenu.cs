@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/**
+ * Controller for pauseUI that handle button behavior in pauseUI.
+ */
 public class PauseMenu : MonoBehaviour
 {
 
@@ -42,6 +45,9 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    /*
+     * Activate any activity in game.
+     */
     public void Resume()
     {
         audioManager.PlaySound(buttonPressSound);
@@ -50,6 +56,9 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
+    /*
+     * Pause any activity in game and activate pauseUI.
+     */
     public void Pause()
     {
         pauseUI.SetActive(true);
@@ -57,6 +66,9 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    /*
+     * Load MainMenu scene.
+     */
     public void Menu()
     {
         audioManager.PlaySound(buttonPressSound);
@@ -66,6 +78,9 @@ public class PauseMenu : MonoBehaviour
 
     }
 
+    /*
+     *Close the application
+     */
     public void Quit()
     {
         audioManager.PlaySound(buttonPressSound);

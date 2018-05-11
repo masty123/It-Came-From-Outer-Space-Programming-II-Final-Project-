@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * Show Player's current money.
+ */
+
 public class MoneyCounter : MonoBehaviour {
 
     private Text MoneyText;
@@ -13,7 +17,9 @@ public class MoneyCounter : MonoBehaviour {
         MoneyText = GetComponent<Text>();
     }
 
-    // Update is called once per frame
+    /*
+     * Show Player's current money from GameMaster.
+     */
     void Update()
     {
         MoneyText.text = "MONEY: " + GameMaster.Money;

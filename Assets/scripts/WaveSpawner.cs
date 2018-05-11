@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ *WaveSpawner spawn wave of enemy until the game end. 
+ */
 public class WaveSpawner : MonoBehaviour {
 
     public enum SpawnState
@@ -50,7 +53,10 @@ public class WaveSpawner : MonoBehaviour {
     {
         get { return state; }
     }
-     
+    
+    /*
+     * Define waveCountdown time.
+     */
    void Start()
     {
     
@@ -62,6 +68,9 @@ public class WaveSpawner : MonoBehaviour {
         waveCountdown = timeBetweenWaves;
     }
 
+    /*
+     * Check enemy in scene if no one survive start new wave.
+     */
     void Update()
     {   
         if (state == SpawnState.WAITING)
@@ -96,6 +105,9 @@ public class WaveSpawner : MonoBehaviour {
         }
     }
 
+    /*
+     * Start next wave.
+     */
     void WaveCompleted()
     {
         Debug.Log("Wave Completed!");
@@ -113,6 +125,9 @@ public class WaveSpawner : MonoBehaviour {
         }
     }
 
+    /*
+     * Check enemy in current wave there are still alive or not.
+     */
     bool EnemyIsAlive()
     {
         searchCountdown -= Time.deltaTime;
@@ -128,6 +143,9 @@ public class WaveSpawner : MonoBehaviour {
         return true;
     }
 
+    /*
+     * Spawn enemy by receive number of enemy from Wave.count .
+     */
     IEnumerator SpawnWave (Wave _wave)
     {
         Debug.Log("Spawning Wave: " + _wave.name);
@@ -145,6 +163,9 @@ public class WaveSpawner : MonoBehaviour {
         yield break;
     }
 
+    /*
+     * Create enemy's Transform.
+     */
     void SpawnEnemy (Transform _enemy)
     {
         //Spawn enemy

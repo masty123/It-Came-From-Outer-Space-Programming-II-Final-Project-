@@ -6,6 +6,9 @@ using Mono.Data.Sqlite;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
+/*
+ * ScoreManager send score and receive score from Database(Local).
+ */
 public class ScoreManager : MonoBehaviour
 {
 	private string connectionString;
@@ -21,7 +24,9 @@ public class ScoreManager : MonoBehaviour
     public Text nameFromInput;
     private int sizeOfHighscore;
 
-	// Use this for initialization
+	/*
+     * Define Database File (.db) and show score from that.
+     */
 	void Start ()
 	{
         if (inputFieledName.enabled == false ) inputFieledName.enabled = true;
@@ -30,7 +35,9 @@ public class ScoreManager : MonoBehaviour
 		ShowScore ();
 	}
 	
-
+    /*
+     * Get name and score of player then insert that to database.
+     */
     public void enterName() {
         if(nameFromInput.text != string.Empty)
         {
@@ -43,6 +50,9 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    /*
+     * Connect and execute the query for insert score to database.
+     */
 	private void insertScore(string name, int newScore) {
 		using(IDbConnection dbConnection = new SqliteConnection(connectionString))
 		{
@@ -58,7 +68,10 @@ public class ScoreManager : MonoBehaviour
 		}
 	}
 
-	private void GetScores()
+    /*
+     * Connect and excute the query for get all score in database and collect all data in List of HighScore object.
+     */
+    private void GetScores()
 	{
 		highscore.Clear ();
 		using(IDbConnection dbConnection = new SqliteConnection(connectionString))
@@ -83,7 +96,10 @@ public class ScoreManager : MonoBehaviour
 			}
 		}
 	}
-
+    
+    /*
+     * Clear score on UI.
+     */
     private void clearBoard()
     {
         foreach(GameObject score in GameObject.FindGameObjectsWithTag("Score"))
@@ -92,6 +108,9 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    /*
+     * Show all score at most 10 in List<HighScore>. 
+     */
 	private void ShowScore(){
 		GetScores ();
         clearBoard();

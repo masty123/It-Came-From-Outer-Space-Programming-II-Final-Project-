@@ -64,7 +64,10 @@ public class Enemy : MonoBehaviour {
 	
 
 	
-	//If the eneny hp has reach 0, kill the emeny.
+    /*
+     * Reduce enemy's health when enemy got any attack.
+     * If the eneny hp has reach 0, kill the emeny.
+     */
 	public void DamageEnemy (int damage) {
         enemyStats.curHealth -= damage;
 		if (enemyStats.curHealth <= 0) {
@@ -77,6 +80,9 @@ public class Enemy : MonoBehaviour {
         }
     }
 
+    /*
+     * Deal damage to Player when Enemy hit the Player.
+     */
     void OnCollisionEnter2D(Collision2D _colinfo)
     {
         Player _player = _colinfo.collider.GetComponent<Player>();
@@ -95,6 +101,9 @@ public class Enemy : MonoBehaviour {
         }
     }
 
+    /*
+     * Stop any action when UpgradeMenu are called.
+     */ 
     void OnUpgradeMenuToggle(bool active)
     {
         // handle what happens the upgrade menu is toggled.

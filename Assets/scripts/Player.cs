@@ -41,19 +41,27 @@ public class Player : MonoBehaviour {
         InvokeRepeating("RegenHealth", 1f/stats.regenRate, 1f/stats.regenRate);
     }
 
+    /*
+     * Increasing health of player by 1.
+     */
     void RegenHealth()
     {
         stats.curHealth += 1;
         statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);
     }
 
-    //Kill player if fall
+    /*
+     * Kill player if fall.
+     */
     void Update(){
 		if (transform.position.y <= fallBoundary) {
 			DamagePlayer(99999); 
 		}
 	}
 
+    /*
+     * Stop any action when UpgradeMenu are called.
+     */
     void OnUpgradeMenuToggle (bool active)
     {
         // handle what happens the upgrade menu is toggled.
@@ -62,8 +70,11 @@ public class Player : MonoBehaviour {
         if (_weapon != null) _weapon.enabled = !active;
     }
 
-	//If the player hp has reach 0, kill the player.
-	public void DamagePlayer (int damage) {
+    /*
+     * Reduce player's health when enemy got any attack.
+     * If the player hp has reach 0, kill the player.
+     */
+    public void DamagePlayer (int damage) {
 		stats.curHealth -= damage;
 		if (stats.curHealth <= 0) {
             //play death sound

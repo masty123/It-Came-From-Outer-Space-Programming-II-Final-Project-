@@ -55,6 +55,9 @@ public class GameMaster : MonoBehaviour {
     //cache
     private AudioManager audioManager;
 
+    /*
+     * Define AudioManager, _remainingLive and Money.
+     */
     void Start()
     {
         if (cameraShake == null)
@@ -70,7 +73,9 @@ public class GameMaster : MonoBehaviour {
 
     }
 
-
+    /*
+     * When Player or Player2 die.Create new Player to continue the game.
+     */ 
 	public IEnumerator RespawnPlayer (int playerNum){
         audioManager.PlaySound(respawnCountdownSoundName);
         yield return new WaitForSeconds(spawnDelay);
@@ -88,7 +93,9 @@ public class GameMaster : MonoBehaviour {
 		Destroy (clone, 3f);
 	}
 
-    //make it static so, we don't want to reference the gamemaster everytime we want to kill the player
+    /*
+     * Destroy Player object.
+     */
     public static void KillPlayer (Player player) {
 		Destroy (player.gameObject);
         _remainingLives -= 1;
@@ -102,6 +109,9 @@ public class GameMaster : MonoBehaviour {
         }
     }
 
+    /*
+     * Destroy Player2 object.
+     */
     public static void KillPlayer2(Player2 player)
     {
         Destroy(player.gameObject);
@@ -116,6 +126,9 @@ public class GameMaster : MonoBehaviour {
         }
     }
 
+    /*
+     * Destroy Enemy object.
+     */
     public static void KillEnemy (Enemy enemy)
     {
         gm._KillEnemy(enemy);
@@ -143,6 +156,9 @@ public class GameMaster : MonoBehaviour {
         Destroy(_enemy.gameObject);
     }
 
+    /*
+     * Open UpgradeMenu scene when press U on keyboard.
+     */
      void Update()
     {
         if (Input.GetKeyDown(KeyCode.U))
@@ -151,6 +167,9 @@ public class GameMaster : MonoBehaviour {
         }
     }
 
+    /*
+     * Activate the UpgradeMenu scene.
+     */
     private void ToggleUpgradeMenu()
     {
         upgradeMenu.SetActive(!upgradeMenu.activeSelf);
@@ -164,6 +183,9 @@ public class GameMaster : MonoBehaviour {
         Time.timeScale = 0f;       
     }
 
+    /*
+     * Activate the GameOver scene.
+     */
     public void EndGame()
     {
         audioManager.PlaySound("GameOver");

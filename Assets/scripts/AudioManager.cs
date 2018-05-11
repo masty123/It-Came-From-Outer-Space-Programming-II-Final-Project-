@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+ 
 [System.Serializable]
 public class Sound {
     public string name;
@@ -40,6 +41,9 @@ public class Sound {
     }
 }
 
+/*
+ * AudioManager get any sound source 
+ */
 public class AudioManager : MonoBehaviour{
 
     public static AudioManager instance;
@@ -60,6 +64,9 @@ public class AudioManager : MonoBehaviour{
         }
     }
 
+    /*
+     * When start the application find sound and play it.
+     */
     void Start()
     {
        for (int i = 0; i < sounds.Length; i++)
@@ -71,7 +78,9 @@ public class AudioManager : MonoBehaviour{
         PlaySound("Music");
     }
 
-
+    /*
+     * Play any sound in soucre by receive string of sound's name.
+     */
     public void PlaySound(string _name)
     {
         for (int i = 0; i < sounds.Length; i++)
@@ -86,6 +95,10 @@ public class AudioManager : MonoBehaviour{
         Debug.LogWarning("AudioManager: Sound not found in list, " + _name);
     }
 
+
+    /*
+     * Stop any sound in soucre by receive string of sound's name.
+     */
     public void StopSound(string _name)
     {
         for (int i = 0; i < sounds.Length; i++)

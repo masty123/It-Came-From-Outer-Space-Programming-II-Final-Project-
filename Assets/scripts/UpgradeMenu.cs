@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * Upgrade or increase player's status
+ */
 public class UpgradeMenu : MonoBehaviour {
 
     [SerializeField]
@@ -30,12 +33,18 @@ public class UpgradeMenu : MonoBehaviour {
         UpdateValues();
     }
 
+    /*
+     * Update new status of player.
+     */
     void UpdateValues()
     {
         healthText.text = "HEALTH: "+ stats.maxHealth.ToString();
         speedText.text = "SPEED: "+ stats.movementSpeed.ToString();
     }
 
+    /*
+     * Increase player's maximum health.
+     */
     public void UpgradeHealth()
     {   if (GameMaster.Money < upgradeCost)
         {
@@ -50,6 +59,9 @@ public class UpgradeMenu : MonoBehaviour {
         UpdateValues();
     }
 
+    /*
+     * Increase player's movement speed.
+     */
     public void UpgradeSpeed()
     {
         if (GameMaster.Money < upgradeCost)

@@ -1,6 +1,9 @@
 using UnityEngine;
 using System;
 
+/*
+ * Collect score ,name ,id ,and date of Player.
+ */ 
 public class HighScore : IComparable<HighScore>
 {
 	public int Score{ get; set;}
@@ -15,6 +18,12 @@ public class HighScore : IComparable<HighScore>
 		this.Date = date;
 	}
 
+    /*
+     * Compare with other HighScore 
+     * @return positive if this score > other score
+     *         negative if this score < other score
+     *         if this score = other score compare by DateTime.
+     */
 	public int CompareTo(HighScore other){
 		if (this.Score == other.Score)
 			return this.Date.CompareTo (other.Date);

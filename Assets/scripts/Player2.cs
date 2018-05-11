@@ -48,7 +48,9 @@ public class Player2 : MonoBehaviour
         statusIndicator.SetHealth(stats.curHealth, stats.maxHealth);
     }
 
-    //Kill player if fall
+    /*
+     * Kill player2 if fall.
+     */
     void Update()
     {
         if (transform.position.y <= fallBoundary)
@@ -57,6 +59,9 @@ public class Player2 : MonoBehaviour
         }
     }
 
+    /*
+     * Stop any action when UpgradeMenu are called.
+     */
     void OnUpgradeMenuToggle(bool active)
     {
         // handle what happens the upgrade menu is toggled.
@@ -65,7 +70,10 @@ public class Player2 : MonoBehaviour
         if (_weapon != null) _weapon.enabled = !active;
     }
 
-    //If the player hp has reach 0, kill the player.
+    /*
+      * Reduce player2's health when enemy got any attack.
+      * If the player2 hp has reach 0, kill the player2.
+      */
     public void DamagePlayer(int damage)
     {
         stats.curHealth -= damage;

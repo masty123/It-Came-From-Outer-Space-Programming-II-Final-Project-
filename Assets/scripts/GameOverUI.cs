@@ -23,6 +23,9 @@ public class GameOverUI : MonoBehaviour {
         }
     }
 
+    /*
+     * Close appliction. 
+     */
     public void Quit ()
     {
         audioManager.PlaySound(buttonPressSound);
@@ -30,6 +33,9 @@ public class GameOverUI : MonoBehaviour {
         Application.Quit();
     }
 
+    /*
+     * Load current scence again depend on selected mode like user play on MainLevel it will call MainLevel again.
+     */
     public void Retry()
     {
         audioManager.PlaySound(buttonPressSound);
@@ -39,6 +45,9 @@ public class GameOverUI : MonoBehaviour {
         Time.timeScale = 1;
     }
 
+    /*
+     * Play sound when mouse over button.
+     */ 
     public void OnMouseOver()
     {
         audioManager.PlaySound(mouseHoverSound);

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Special object that give some effect to Player(or Player2)when layer(or Player2) hit this.
+ */
 public class PowerUp : MonoBehaviour {
 
     public float multiplier = 1.4f;
@@ -31,7 +34,9 @@ public class PowerUp : MonoBehaviour {
     }
 
 
-
+    /*
+     *Increase player's mazHealth and size of player when player hit this object. 
+     */
     IEnumerator Pickup(Collider2D player)
     {
         // Spawn a cool effect
@@ -64,7 +69,9 @@ public class PowerUp : MonoBehaviour {
         Destroy(gameObject);
     }
 
-
+    /*
+    *Increase player2's mazHealth and size of player2 when player2 hit this object. 
+    */
     IEnumerator PickupForPlayer2(Collider2D player)
     {
         // Spawn a cool effect

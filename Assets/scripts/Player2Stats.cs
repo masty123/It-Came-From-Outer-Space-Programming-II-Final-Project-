@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Player2Stat collect all status of player2
+ * Maximum health ,Movement speed and regenary rate.
+ */
 public class Player2Stats :MonoBehaviour {
 
 	public static Player2Stats instance ;

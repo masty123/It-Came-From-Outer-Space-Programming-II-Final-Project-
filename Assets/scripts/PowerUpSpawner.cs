@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Spawn PowerUp object when time passed.
+ */
 public class PowerUpSpawner : MonoBehaviour {
 
     public GameObject powerUp;
@@ -13,7 +16,9 @@ public class PowerUpSpawner : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
+	/*
+     * Spawn PowerUp at the appointd time.
+     */
 	void Update () {
 		if(Time.time > nextSpawn)
         {

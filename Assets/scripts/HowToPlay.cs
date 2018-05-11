@@ -12,6 +12,9 @@ public class HowToPlay : MonoBehaviour
 
     AudioManager audioManager;
 
+    /*
+     * Call AudioManager when this class started.
+     */
     void Start()
     {
         audioManager = AudioManager.instance;
@@ -21,16 +24,18 @@ public class HowToPlay : MonoBehaviour
         }
     }
 
-
-
-
-
+    /*
+     * Back to MainMenu scene.
+     */
     public void Back()
     {
         audioManager.PlaySound(pressButtonSound);
         SceneManager.LoadScene("MainMenu");
     }
 
+    /*
+     * Play sound when mouse over the button.
+     */
     public void OnMouseOver()
     {
         audioManager.PlaySound(hoverOverSound);

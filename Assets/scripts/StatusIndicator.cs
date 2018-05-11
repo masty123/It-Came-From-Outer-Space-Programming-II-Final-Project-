@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/*
+ * StatusIndicator show player's status in UI graphic.
+ */
 public class StatusIndicator : MonoBehaviour {
 
     [SerializeField]
@@ -22,6 +25,9 @@ public class StatusIndicator : MonoBehaviour {
         }
     }
 
+    /*
+     * Change size of healthBar.
+     */
     public void SetHealth(int _cur, int _max)
     {
         float _value = (float) _cur / _max;
