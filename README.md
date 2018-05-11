@@ -20,7 +20,7 @@ Game Over
 ![GUI](ImagePreview/GameOver.PNG)
 
 ### Design Pattern used
-- Singleton - the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. [Read more about Composite design pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+- Singleton - the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. [Read more about Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 
 
 
