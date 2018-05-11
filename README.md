@@ -9,7 +9,7 @@ It Came From Outer Space is a 2D-Shooting Game that gamer will need to fight ali
 ![GUI](ImagePreview/SinglePlayer.PNG)
 ![GUI](ImagePreview/TwoPlayer.PNG)
 ![GUI](ImagePreview/MainMenupreview.PNG)
-![GUI](ImagePreview/preview4.PNG)
+![GUI](ImagePreview/GameOver.PNG)
 
 
 ### Installation
