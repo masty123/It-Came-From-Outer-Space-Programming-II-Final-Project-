@@ -23,7 +23,7 @@ public class MenuManager : MonoBehaviour {
 
     public void StartGame () {
         audioManager.PlaySound(pressButtonSound);
- 
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
@@ -31,6 +31,12 @@ public class MenuManager : MonoBehaviour {
 		audioManager.PlaySound(pressButtonSound);
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
 	}
+
+    public void HowToPlay()
+    {
+        audioManager.PlaySound(pressButtonSound);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
 
 
     public void QuitGame()

@@ -56,7 +56,7 @@ public class Weapon : MonoBehaviour {
 	void Update () {
         if(weaponNumber== 2)
         {
-            keyCode = KeyCode.M;
+            keyCode = KeyCode.RightControl;
         }
         else if(weaponNumber == 1)
         {
