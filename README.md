@@ -7,7 +7,12 @@ It Came From Outer Space is a 2D-Shooting Game that gamer will need to fight ali
 - Singleton - the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. [Read more about Composite design pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 - 
 ### Installation
-1.
+1. Download the runnable file
+
+
+| PC | MacOS |Linux|
+|:----------------:|:-----------:|:-----------:|
+|[here]()          |[here]()     |[here]()     |
 
 
 
