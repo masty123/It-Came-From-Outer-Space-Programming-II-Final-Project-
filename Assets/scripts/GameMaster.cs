@@ -46,9 +46,6 @@ public class GameMaster : MonoBehaviour {
     [SerializeField]
     private WaveSpawner waveSpawner;
 
-    private bool pause = true;
-
-
     public delegate void UpgradeMenuCallBack(bool active);
     public UpgradeMenuCallBack OnToggleUpgradeMenu;
 
@@ -177,6 +174,9 @@ public class GameMaster : MonoBehaviour {
         OnToggleUpgradeMenu.Invoke(upgradeMenu.activeSelf);
     }
 
+    /*
+     * This method will stop time, counting down from 2 seconds.
+     */
     IEnumerator togglePause()
     {
         yield return new WaitForSeconds(2);

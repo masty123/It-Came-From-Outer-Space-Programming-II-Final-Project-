@@ -8,13 +8,13 @@ public class CameraShake : MonoBehaviour {
     float shakeAmount = 0;
 
 
-
+    //check whether it there is a camera or not. If there is a camera, use it
 	void Awake () {
         if (mainCam == null) mainCam = Camera.main;
 	}
 
 
-
+    //How much the camera shake. It can be modify in the shakeAmount variable.
     public void Shake(float amount, float length)
     {  
         shakeAmount = amount;
@@ -22,6 +22,9 @@ public class CameraShake : MonoBehaviour {
         Invoke("StopShake", length);
     }
 
+    /*
+     * Start shaking the camera
+     */
     void Doshake()
     {
         if (shakeAmount > 0 )
@@ -39,6 +42,7 @@ public class CameraShake : MonoBehaviour {
         }
     }
 
+    //Stop checking
     void StopShake()
     {
         CancelInvoke("Doshake");

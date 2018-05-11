@@ -2,7 +2,9 @@ using UnityEngine;
 
 namespace UnitySampleAssets._2D
 {
-
+    /*
+     * This is used for making the camera follow the player.
+     */
     public class Camera2DFollow : MonoBehaviour
     {
 
@@ -58,6 +60,10 @@ namespace UnitySampleAssets._2D
 
             lastTargetPosition = target.position;
         }
+
+        /*
+         * Focus where the player is. 
+         */
 		void FindPlayer() {
 			if (nextTimeToSearch <= Time.time) {
 				GameObject searchResult = GameObject.FindGameObjectWithTag("Player");

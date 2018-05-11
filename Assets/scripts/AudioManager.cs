@@ -20,6 +20,9 @@ public class Sound {
 
     private AudioSource source;
 
+    /*
+     *seting an output audio 
+     */
     public void SetSource(AudioSource _source)
     {
         source = _source;
@@ -27,6 +30,9 @@ public class Sound {
         source.loop = loop;
     }
 
+    /*
+     * play the audio
+     */
     public void Play()
     {
         source.volume = volume * (1 + Random.Range(-randomVolume / 2f, randomVolume/ 2f));
@@ -34,6 +40,9 @@ public class Sound {
         source.Play();
     }
 
+    /*
+     * stop the audio
+     */
     public void Stop()
     {
 
@@ -47,7 +56,11 @@ public class Sound {
 public class AudioManager : MonoBehaviour{
 
     public static AudioManager instance;
-
+    
+    /*
+     * An array of individual sound that use in each situation like shooting, jumping and many more.
+     */
+     
     [SerializeField]
     Sound[] sounds;
 

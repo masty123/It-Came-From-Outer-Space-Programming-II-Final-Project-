@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/*
+ *Parallax scrolling is a technique in computer graphics where background images move by the camera slower than 
+ *foreground images, creating an illusion of depth in a 2D scene and adding to the immersion.
+ */
 public class Parallaxing : MonoBehaviour {
 
 	public Transform [] background ; // Array (list) of all the back and forground parallaxed.

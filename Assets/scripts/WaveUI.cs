@@ -1,22 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-
+/*
+ * this class is used for announce the player when the wave is starting, and how many wave is/are the player been fighting.
+ */
 public class WaveUI : MonoBehaviour {
 
     [SerializeField]
-    WaveSpawner spawner;
+    WaveSpawner spawner; //an enemy spawner class
 
     [SerializeField]
-    Animator waveAnimator;
+    Animator waveAnimator; // animation when a wave is happening
 
     [SerializeField]
-    Text waveCountdownText;
+    Text waveCountdownText; // countdown before the wave begin.
 
     [SerializeField]
-    Text waveCountText;
+    Text waveCountText; // count the wave
 
-    private WaveSpawner.SpawnState previousState;
+    private WaveSpawner.SpawnState previousState; //for indicate what wavespawner is doing.
 
     // Use this for initialization
     void Start () {
@@ -58,6 +60,7 @@ public class WaveUI : MonoBehaviour {
 
     }
 
+    //update the wave number
     void UpdateCountingUI()
     {   
         if (previousState != WaveSpawner.SpawnState.COUNTING)
@@ -69,7 +72,8 @@ public class WaveUI : MonoBehaviour {
         }
         waveCountdownText.text = ((int)spawner.WaveCountDown).ToString();
     }
-
+    
+    //tell that the wave is coming
     void UpdateSpawningUI()
     {
         if (previousState != WaveSpawner.SpawnState.SPAWNING)

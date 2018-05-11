@@ -8,14 +8,16 @@ public class Tilling : MonoBehaviour {
 	public int offsetX = 2 ;   //the offset so that we don't get any weird errors
 
 	// these are used for checking if we need to instantiate stuff
-	public bool hasARightBuddy = false ;
-	public bool hasALeftBuddy = false ;
+	public bool hasARightBuddy = false; //for checking when there is no more scene at the right
+    public bool hasALeftBuddy = false ; //for checking when there is no more scene at the left
 
 	public bool reverseScale = false ; //used if the object is not tilable
 
 	private float spriteWidth = 0f;  // the width of our element
-	private Camera cam ;
-	private Transform myTransform;
+	private Camera cam ;   //add more tiling by, checking the camera position
+	private Transform myTransform; //background transform.
+
+    //Contructor
 	void Awake () {
 		cam = Camera.main;
 		myTransform = transform;
@@ -51,7 +53,9 @@ public class Tilling : MonoBehaviour {
 		}
 	}
 
-	// a  function that creates a buddy on the side required
+    /*
+     * A  function that creates a buddy on the side required
+     */
 	void MakeNewBody (int direction)
 	{
 		Vector3 newPosition = new Vector3 (myTransform.position.x + spriteWidth * direction, myTransform.position.y, myTransform.position.z);
