@@ -24,17 +24,12 @@ public class ScoreManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-        if (inputFieledName.enabled == false) inputFieledName.enabled = true;
+        if (inputFieledName.enabled == false ) inputFieledName.enabled = true;
         if (enterButton.enabled == false) enterButton.enabled = true;
         connectionString = "URI=file:" + Application.dataPath + "/HighScoreDB.db";
 		ShowScore ();
 	}
 	
-	// Update is called once per frame
-	void Update ()
-	{
-	
-	}
 
     public void enterName() {
         if(nameFromInput.text != string.Empty)

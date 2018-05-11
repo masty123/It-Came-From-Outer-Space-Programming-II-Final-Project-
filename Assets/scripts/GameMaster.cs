@@ -158,9 +158,10 @@ public class GameMaster : MonoBehaviour {
         OnToggleUpgradeMenu.Invoke(upgradeMenu.activeSelf);
     }
 
-    void togglePause()
+    IEnumerator togglePause()
     {
-            Time.timeScale = 0f;       
+        yield return new WaitForSeconds(2);
+        Time.timeScale = 0f;       
     }
 
     public void EndGame()
@@ -169,7 +170,6 @@ public class GameMaster : MonoBehaviour {
         Debug.Log("GAME OVER");
         gameOverUI.SetActive(true);
         togglePause();
-
     }
 
 }
