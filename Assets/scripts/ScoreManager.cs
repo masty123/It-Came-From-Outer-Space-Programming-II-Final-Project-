@@ -32,6 +32,7 @@ public class ScoreManager : MonoBehaviour
         if (inputFieledName.enabled == false ) inputFieledName.enabled = true;
         if (enterButton.enabled == false) enterButton.enabled = true;
         connectionString = "URI=file:" + Application.dataPath + "/HighScoreDB.db";
+        createTable ();
 		ShowScore ();
 	}
 	
@@ -69,9 +70,28 @@ public class ScoreManager : MonoBehaviour
 	}
 
     /*
+     * Connect and execute the query for insert score to database.
+     */
+    private void createTable()
+    {
+        using (IDbConnection dbConnection = new SqliteConnection(connectionString))
+        {
+            dbConnection.Open();
+
+            using (IDbCommand command = dbConnection.CreateCommand())
+            {
+                string sqlQuery = string.Format("CREATE TABLE if not exists HighScores ( PlayerID INTEGER  NOT NULL UNIQUE PRIMARY KEY, Name TEXT NOT NULL, Score INTEGER NOT NULL,Date DATETIME NOT NULL DEFAULT(CURRENT_DATE));");
+                command.CommandText = sqlQuery;
+                command.ExecuteScalar();
+                dbConnection.Close();
+            }
+        }
+    }
+
+    /*
      * Connect and excute the query for get all score in database and collect all data in List of HighScore object.
      */
-    private void GetScores()
+    private void getScores()
 	{
 		highscore.Clear ();
 		using(IDbConnection dbConnection = new SqliteConnection(connectionString))
@@ -112,7 +132,7 @@ public class ScoreManager : MonoBehaviour
      * Show all score at most 10 in List<HighScore>. 
      */
 	private void ShowScore(){
-		GetScores ();
+		getScores ();
         clearBoard();
 		highscore.Sort ();
 		highscore.Reverse ();
