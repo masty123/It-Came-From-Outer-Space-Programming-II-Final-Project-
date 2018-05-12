@@ -29,7 +29,7 @@ Download the zip file
 
 | PC | MacOS |Linux|
 |:----------------:|:-----------:|:-----------:|
-|[here]()         |[here]()   |[here]()|
+|[here](https://github.com/masty123/ItCameFromOuterSpace/blob/master/RunnableZip/PC.zip)         |[here](https://github.com/masty123/ItCameFromOuterSpace/blob/master/RunnableZip/Mac.zip)   |[here](https://github.com/masty123/ItCameFromOuterSpace/blob/master/RunnableZip/Linux.zip)|
 
  Install the file
  - For PC - Extract and run the .exe file
