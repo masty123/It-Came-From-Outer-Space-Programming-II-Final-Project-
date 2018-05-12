@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * Control and contain any necessary object for the whole game.
+ * @author Theeruth Borisuth 
+ */
 public class GameMaster : MonoBehaviour {
 
 	public static GameMaster gm;

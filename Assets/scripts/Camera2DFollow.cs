@@ -4,6 +4,7 @@ namespace UnitySampleAssets._2D
 {
     /*
      * This is used for making the camera follow the player.
+     * @author Theeruth Borisuth
      */
     public class Camera2DFollow : MonoBehaviour
     {

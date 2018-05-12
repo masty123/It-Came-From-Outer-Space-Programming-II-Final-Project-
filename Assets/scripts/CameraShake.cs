@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * This is used for making the camera shake.
+ * @author Theeruth Borisuth 
+ */
 public class CameraShake : MonoBehaviour {
 
     public Camera mainCam;

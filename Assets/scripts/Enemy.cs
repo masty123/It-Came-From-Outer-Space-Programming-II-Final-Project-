@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
- 
+
+/**
+ *Class for enemy that contain EnemyStat in kind of annonymous class. 
+ * @author Theeruth Borisuth 
+ */
 [RequireComponent(typeof(EnemyAI))]
 public class Enemy : MonoBehaviour {
 

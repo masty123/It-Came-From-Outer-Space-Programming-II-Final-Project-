@@ -4,6 +4,7 @@ using System.Collections;
 
 /*
  *EnemyAI find path for the Enemy to move to the Player.
+ * @author Theeruth Borisuth 
  */
 [RequireComponent (typeof (Rigidbody2D))]
 [RequireComponent (typeof (Seeker))]
