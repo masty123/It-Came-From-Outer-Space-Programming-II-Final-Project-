@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 /**
  * Show Player's current score.
+ * @author Theeruth Borisuth 
  */
 public class ScoreCounter : MonoBehaviour {
 

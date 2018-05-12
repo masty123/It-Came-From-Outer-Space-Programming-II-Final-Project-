@@ -2,7 +2,10 @@
 using UnityEngine.SceneManagement;
 
 
-
+/**
+ * This used to call and handle behavior of GameOver secen.
+ * @author Theeruth Borisuth  
+ */
 public class GameOverUI : MonoBehaviour {
 
     [SerializeField]

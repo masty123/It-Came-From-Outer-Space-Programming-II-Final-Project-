@@ -2,6 +2,7 @@
 using System.Collections;
 /*
  * This class is use when the player is shooting, the bullet trail will come out and destroy in one second.
+ * @author Theeruth Borisuth 
  */
 public class MoveTrail : MonoBehaviour {
 

@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 /**
  * Controller for pauseUI that handle button behavior in pauseUI.
+ * @author Theeruth Borisuth 
  */
 public class PauseMenu : MonoBehaviour
 {

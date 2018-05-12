@@ -3,6 +3,7 @@
 /**
  * PlayerStat collect all status of player
  * Maximum health ,Movement speed and regenary rate.
+ * @author Theeruth Borisuth 
  */
 [System.Serializable]
 public class PlayerStats : MonoBehaviour

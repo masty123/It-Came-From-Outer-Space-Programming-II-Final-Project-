@@ -2,7 +2,9 @@
 using System.Collections;
 
 [RequireComponent (typeof(SpriteRenderer))]
-
+/*
+ * @author Theeruth Borisuth
+ */
 public class Tilling : MonoBehaviour {
 
 	public int offsetX = 2 ;   //the offset so that we don't get any weird errors

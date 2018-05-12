@@ -4,6 +4,7 @@ using UnityEngine;
 
 /*
  * Special object that give some effect to Player(or Player2)when layer(or Player2) hit this.
+ * @author Theeruth Borisuth
  */
 public class PowerUp : MonoBehaviour {
 

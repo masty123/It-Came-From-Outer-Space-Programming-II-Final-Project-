@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 /**
  * Show Player's current lives.
+ * @author Theeruth Borisuth 
  */
 [RequireComponent(typeof(Text))]
 public class LiveCounterUI : MonoBehaviour {

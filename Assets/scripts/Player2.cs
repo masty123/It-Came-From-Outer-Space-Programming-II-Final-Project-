@@ -3,6 +3,10 @@ using System.Collections;
 using UnitySampleAssets._2D;
 
 [RequireComponent(typeof(Platformer2DUserControl))]
+/*
+ * Player2 that contain playerStarts ,StatusIndicator same as player but use to control player 2 graphic.
+ * @author Charin   Tantrakul
+ */
 public class Player2 : MonoBehaviour
 {
 

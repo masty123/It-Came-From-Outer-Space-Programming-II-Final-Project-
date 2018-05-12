@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 /*
  * ScoreManager send score and receive score from Database(Local).
+ * @author Charin Tantrakul.
  */
 public class ScoreManager : MonoBehaviour
 {

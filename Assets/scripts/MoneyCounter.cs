@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 /**
  * Show Player's current money.
+ * @author Theeruth Borisuth 
  */
 
 public class MoneyCounter : MonoBehaviour {

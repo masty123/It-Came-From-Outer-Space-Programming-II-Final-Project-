@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 /*
  * StatusIndicator show player's status in UI graphic.
+ * @author Theeruth Borisuth
  */
 public class StatusIndicator : MonoBehaviour {
 

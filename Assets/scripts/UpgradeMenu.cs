@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 /*
  * Upgrade or increase player's status
+ * @author Theeruth Borisuth 
  */
 public class UpgradeMenu : MonoBehaviour {
 

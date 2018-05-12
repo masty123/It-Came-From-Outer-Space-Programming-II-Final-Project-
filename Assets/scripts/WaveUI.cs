@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 /*
  * this class is used for announce the player when the wave is starting, and how many wave is/are the player been fighting.
+ * @author Theeruth Borisuth 
  */
 public class WaveUI : MonoBehaviour {
 

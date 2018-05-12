@@ -2,6 +2,10 @@
 using System.Collections;
 using UnitySampleAssets._2D;
 
+/*
+ * Player that contain playerStarts ,StatusIndicator.
+ * @author Theeruth Borisuth 
+ */
 [RequireComponent(typeof(Platformer2DUserControl))]
 public class Player : MonoBehaviour {
 

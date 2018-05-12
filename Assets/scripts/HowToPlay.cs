@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/**
+ * Controller of HowToPlay scene.
+ * @author Theeruth Borisuth 
+ */
 public class HowToPlay : MonoBehaviour
 {
 

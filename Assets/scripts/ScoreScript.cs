@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 /*
  * Script for ScorePrefab that show score and name of player in database.
+ * @author Charin Tantrakul.
  */
 public class ScoreScript : MonoBehaviour
 {

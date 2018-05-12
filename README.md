@@ -32,9 +32,9 @@ Download the zip file
 |[here](https://github.com/masty123/ItCameFromOuterSpace/blob/master/RunnableZip/PC.zip)         |[here](https://github.com/masty123/ItCameFromOuterSpace/blob/master/RunnableZip/Mac.zip)   |[here](https://github.com/masty123/ItCameFromOuterSpace/blob/master/RunnableZip/Linux.zip)|
 
  Install the file
- - For PC - Extract and run the .exe file
- - For MacOS -
- - For Linux -
+ - For PC - Extract and run the .exe file.
+ - For MacOS - Extract and run the .app file.
+ - For Linux - Extract and run the x86 file.
 
 
 ### How To Play

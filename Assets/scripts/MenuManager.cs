@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 /**
  * Handle all import behavior for MainMenu scene
+ * @author Theeruth Borisuth 
  */
 public class MenuManager : MonoBehaviour {
 

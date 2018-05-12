@@ -4,6 +4,7 @@ using UnityEngine;
 
 /*
  * Spawn PowerUp object when time passed.
+ * @author Charin Tantrakul.
  */
 public class PowerUpSpawner : MonoBehaviour {
 

@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * Controller for weaponUI.
+ * @author Theeruth Borisuth, Charin Tantrakul.
+ */
 public class Weapon : MonoBehaviour {
 	public float fireRate = 0;
 	public int Damage = 10;  

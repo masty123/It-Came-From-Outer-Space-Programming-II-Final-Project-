@@ -3,6 +3,7 @@ using System.Collections;
 
 /*
  *WaveSpawner spawn wave of enemy until the game end. 
+ * @author Theeruth Borisuth ,Charin Tantrakul.
  */
 public class WaveSpawner : MonoBehaviour {
 

@@ -2,8 +2,9 @@ using UnityEngine;
 using System;
 
 /*
- * Collect score ,name ,id ,and date of Player.
- */ 
+ * Collect score ,name ,id ,and date of Player
+ * @author Charin Tantrakul
+ */
 public class HighScore : IComparable<HighScore>
 {
 	public int Score{ get; set;}
