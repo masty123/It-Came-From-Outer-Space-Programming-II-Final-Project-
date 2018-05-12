@@ -25,25 +25,33 @@ Platform assembly: D:\PJBU\work\proto1\ItCameFromOuterSpace\RunnableZip\PC\ItCam
 Loading D:\PJBU\work\proto1\ItCameFromOuterSpace\RunnableZip\PC\ItCameFromOuterSpace_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll into Unity Child Domain
 Platform assembly: D:\PJBU\work\proto1\ItCameFromOuterSpace\RunnableZip\PC\ItCameFromOuterSpace_Data\Managed\Pathfinding.JsonFx.dll (this message is harmless)
 Loading D:\PJBU\work\proto1\ItCameFromOuterSpace\RunnableZip\PC\ItCameFromOuterSpace_Data\Managed\Pathfinding.JsonFx.dll into Unity Child Domain
-- Completed reload, in  0.021 seconds
+- Completed reload, in  0.020 seconds
 Platform assembly: D:\PJBU\work\proto1\ItCameFromOuterSpace\RunnableZip\PC\ItCameFromOuterSpace_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\PJBU\work\proto1\ItCameFromOuterSpace\RunnableZip\PC\ItCameFromOuterSpace_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.134340 ms
+UnloadTime: 1.187711 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.827301 ms
+UnloadTime: 4.760289 ms
 Scanning - Process took 15 ms to complete
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1017.
-Total: 3.695331 ms (FindLiveObjects: 0.072666 ms CreateObjectMapping: 0.021348 ms MarkObjects: 1.602364 ms  DeleteObjects: 1.998131 ms)
+Total: 3.333639 ms (FindLiveObjects: 0.081698 ms CreateObjectMapping: 0.024222 ms MarkObjects: 1.581836 ms  DeleteObjects: 1.645060 ms)
 
 Power spawned
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Flipping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Flipping
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -63,15 +71,7 @@ Spawn Enemy: AlienSpaceship
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Spawn Enemy: AlienSpaceship
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Flipping
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 4.02 ms Searched Nodes 487 Path Length 35
+Path Completed : Computation Time 5.00 ms Searched Nodes 271 Path Length 27
 Path Number 1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -80,7 +80,15 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 1.00 ms Searched Nodes 183 Path Length 19
+Flipping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Spawn Enemy: AlienSpaceship
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 186 Path Length 23
 Path Number 2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -89,7 +97,7 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 427 Path Length 39
+Path Completed : Computation Time 0.00 ms Searched Nodes 163 Path Length 26
 Path Number 3
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -98,7 +106,11 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 128 Path Length 20
+Flipping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 39 Path Length 13
 Path Number 4
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -107,12 +119,20 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 600 Path Length 40
+Path Completed : Computation Time 0.00 ms Searched Nodes 127 Path Length 17
 Path Number 5
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 31 Path Length 12
+We got a path. Did it have an error? False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Flipping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 84 Path Length 13
 Path Number 6
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -121,19 +141,7 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-We got a path. Did it have an error? False
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Flipping
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Flipping
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 0.00 ms Searched Nodes 432 Path Length 37
+Path Completed : Computation Time 0.00 ms Searched Nodes 106 Path Length 17
 Path Number 7
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -142,7 +150,7 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 36 Path Length 12
+Path Completed : Computation Time 0.00 ms Searched Nodes 7 Path Length 4
 Path Number 8
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -151,16 +159,20 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Flipping
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 0.00 ms Searched Nodes 505 Path Length 38
+Path Completed : Computation Time 0.00 ms Searched Nodes 20 Path Length 5
 Path Number 9
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 99 Path Length 19
+We got a path. Did it have an error? False
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+End of the path reached.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 67 Path Length 11
 Path Number 10
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -169,11 +181,7 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-We got a path. Did it have an error? False
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 0.00 ms Searched Nodes 47 Path Length 11
+Path Completed : Computation Time 0.00 ms Searched Nodes 96 Path Length 13
 Path Number 11
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -182,7 +190,11 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 77 Path Length 22
+Flipping
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Path Completed : Computation Time 0.00 ms Searched Nodes 6 Path Length 4
 Path Number 12
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -191,7 +203,7 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 42 Path Length 12
+Path Completed : Computation Time 0.00 ms Searched Nodes 6 Path Length 4
 Path Number 13
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -200,61 +212,8 @@ We got a path. Did it have an error? False
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Path Completed : Computation Time 0.00 ms Searched Nodes 39 Path Length 23
+Path Completed : Computation Time 0.00 ms Searched Nodes 4 Path Length 4
 Path Number 14
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-We got a path. Did it have an error? False
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Flipping
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 0.00 ms Searched Nodes 21 Path Length 8
-Path Number 15
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-We got a path. Did it have an error? False
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 0.00 ms Searched Nodes 18 Path Length 18
-Path Number 16
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-We got a path. Did it have an error? False
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 0.00 ms Searched Nodes 12 Path Length 7
-Path Number 17
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-We got a path. Did it have an error? False
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Flipping
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 1.00 ms Searched Nodes 16 Path Length 7
-Path Number 18
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-We got a path. Did it have an error? False
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Path Completed : Computation Time 0.00 ms Searched Nodes 6 Path Length 4
-Path Number 19
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -284,16 +243,12 @@ Spawn Enemy: AlienSpaceship
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Spawn Enemy: AlienSpaceship
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 Closing Application
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 21a0 -> priority: 1 
-  Thread -> id: 2b84 -> priority: 1 
-  Thread -> id: 2bac -> priority: 1 
-  Thread -> id: 1e34 -> priority: 1 
+  Thread -> id: d1c -> priority: 1 
+  Thread -> id: 2354 -> priority: 1 
+  Thread -> id: 1150 -> priority: 1 
+  Thread -> id: 2af8 -> priority: 1 
