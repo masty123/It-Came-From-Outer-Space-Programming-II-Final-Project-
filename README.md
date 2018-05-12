@@ -34,7 +34,9 @@ Download the zip file
  Install the file
  - For PC - Extract and run the .exe file.
  - For MacOS - Extract and run the .app file.
- - For Linux - Extract and run the x86 file.
+ - For Linux - Extract, Right click at the execution file (Linux.x86 (32 bit) or Linux.x86_64 (64 bit)) -> Go to properties -> Go to Permission tab -> At Execute, tick "Allow executing file as program".
+
+
 
 
 ### How To Play
