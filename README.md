@@ -32,7 +32,7 @@ Game Over
 - Singleton - the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. [Read more about Singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 
 ### Interesting technic that we have used.
-- Parallaxing - Scrolling background that move along with the camera make the background has more depth You can check [similar example video of the Parallaxing ]() that was developed by Walt Disney Animation Studio
+- Parallaxing - Scrolling background that move along with the camera make the background has more depth You can check [similar example video of the Parallaxing ](https://www.youtube.com/watch?v=YdHTlUGN1zw&t=182s) that was developed by Walt Disney Animation Studio
 
 - Tilling - this prevent the background from cutting when we go near the edge of each side. It will generate the same background and connect to the end of the one of the side of the background which will make the scene look like it is a big scene.
 
