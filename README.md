@@ -54,3 +54,8 @@ Download the zip file
 
 ### How To Play
 ![GUI](ImagePreview/HowToPlay.PNG)
+
+
+### Developers roles and responsibilities
+- Theeruth Borisuth - Game designing, bug fixing, sound managing.
+- Charin Tantrakul - Database engineer, Graphics artist, bug fixing.

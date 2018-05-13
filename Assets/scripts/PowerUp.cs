@@ -95,7 +95,7 @@ public class PowerUp : MonoBehaviour {
 
         //Reverse the effect on our player
         Debug.Log("reversing");
-        player.transform.localScale /= multiplier;
+        if(player != null)  player.transform.localScale /= multiplier;
         float temp = stats.curHealth;
         int result = (int)Mathf.Ceil((temp /= multiplier));
         stats2.curHealth = result;
