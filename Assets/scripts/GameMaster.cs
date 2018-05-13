@@ -35,7 +35,8 @@ public class GameMaster : MonoBehaviour {
 	public Transform spawnPrefab;
     public string respawnCountdownSoundName = "RespawnCountdown";
     public string spawnSoundName = "Spawn";
-    
+    private static bool GameIsPaused = false;
+
 
     public string gameOverSoundName = "GameOver";
 
@@ -164,7 +165,14 @@ public class GameMaster : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.U))
         {
-            ToggleUpgradeMenu();
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
         }
     }
 
@@ -185,6 +193,26 @@ public class GameMaster : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
         Time.timeScale = 0f;       
+    }
+
+    /*
+    * Activate any activity in game.
+    */
+    public void Resume()
+    {   
+
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
+
+    /*
+     * Pause any activity in game and activate pauseUI.
+     */
+    IEnumerator  Pause()
+    {
+        yield return new WaitForSeconds(2);
+        Time.timeScale = 0f;
+        GameIsPaused = true;
     }
 
     /*

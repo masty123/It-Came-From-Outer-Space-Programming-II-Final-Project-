@@ -40,6 +40,7 @@ public class PowerUp : MonoBehaviour {
      */
     IEnumerator Pickup(Collider2D player)
     {
+        int healthBefore = stats.maxHealth;
         // Spawn a cool effect
         Instantiate(pickupEffect, transform.position, transform.rotation);
         // Apply effect to the player
@@ -60,18 +61,25 @@ public class PowerUp : MonoBehaviour {
 
         //Reverse the effect on our player
         Debug.Log("reversing");
-        if(player != null) player.transform.localScale /= multiplier;
-        float temp = stats.curHealth;
-        int result = (int)Mathf.Ceil((temp /= multiplier));
+        int result = 0;
+        if(player != null)
+        {
+            player.transform.localScale /= multiplier;
+            float temp = stats.curHealth;
+            result = (int)Mathf.Ceil((temp /= multiplier));
+            result = healthBefore;
+        }
+
         stats.curHealth = result;
         stats.maxHealth = result;
-    
+
+
         Debug.Log(result);
         Destroy(gameObject);
     }
 
     /*
-    *Increase player2's mazHealth and size of player2 when player2 hit this object. 
+    *Increase player2's maxHealth and size of player2 when player2 hit this object. 
     */
     IEnumerator PickupForPlayer2(Collider2D player)
     {
@@ -95,11 +103,18 @@ public class PowerUp : MonoBehaviour {
 
         //Reverse the effect on our player
         Debug.Log("reversing");
-        if(player != null)  player.transform.localScale /= multiplier;
-        float temp = stats.curHealth;
-        int result = (int)Mathf.Ceil((temp /= multiplier));
+        int result = 0;
+        if (player != null)
+        {
+            if (player != null) player.transform.localScale /= multiplier;
+            float temp = stats.curHealth;
+            result = (int)Mathf.Ceil((temp /= multiplier));
+        }
+
         stats2.curHealth = result;
         stats2.maxHealth = result;
+
+
 
         Debug.Log(result);
         Destroy(gameObject);

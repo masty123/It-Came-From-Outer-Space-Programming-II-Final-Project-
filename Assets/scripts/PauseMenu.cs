@@ -30,7 +30,7 @@ public class PauseMenu : MonoBehaviour
     }
 
 
-    //Udpate is called once per frame
+    //Update is called once per frame
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
