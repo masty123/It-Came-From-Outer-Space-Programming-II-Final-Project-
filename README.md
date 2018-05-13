@@ -55,6 +55,12 @@ Download the zip file
 ### How To Play
 ![GUI](ImagePreview/HowToPlay.PNG)
 
+###UML Class Diagram
+***All Class in this UML extends MonoBehavior**
+![GUI](ImagePreview/UML-1.png)
+![GUI](ImagePreview/UML-2.png)
+
+
 
 ### Developers roles and responsibilities
 - Theeruth Borisuth - Game designing, bug fixing, sound managing.
