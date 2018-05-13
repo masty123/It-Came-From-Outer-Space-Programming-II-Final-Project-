@@ -165,14 +165,7 @@ public class GameMaster : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.U))
         {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            ToggleUpgradeMenu();
         }
     }
 
@@ -190,30 +183,11 @@ public class GameMaster : MonoBehaviour {
      * This method will stop time, counting down from 2 seconds.
      */
     IEnumerator togglePause()
-    {
-        yield return new WaitForSeconds(2);
+    {   
+        yield return new WaitForSeconds(3);
         Time.timeScale = 0f;       
     }
 
-    /*
-    * Activate any activity in game.
-    */
-    public void Resume()
-    {   
-
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
-
-    /*
-     * Pause any activity in game and activate pauseUI.
-     */
-    IEnumerator  Pause()
-    {
-        yield return new WaitForSeconds(2);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-    }
 
     /*
      * Activate the GameOver scene.
