@@ -111,7 +111,11 @@ public class Enemy : MonoBehaviour {
     void OnUpgradeMenuToggle(bool active)
     {
         // handle what happens the upgrade menu is toggled.
-        GetComponent<EnemyAI>().enabled = !active;
+        if(statusIndicator  != null)
+        {
+            GetComponent<EnemyAI>().enabled = !active;
+        }
+        
 
     }
 

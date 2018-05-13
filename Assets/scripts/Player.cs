@@ -69,9 +69,12 @@ public class Player : MonoBehaviour {
     void OnUpgradeMenuToggle (bool active)
     {
         // handle what happens the upgrade menu is toggled.
-        GetComponent<Platformer2DUserControl>().enabled = !active;
-        Weapon _weapon = GetComponentInChildren<Weapon>();
-        if (_weapon != null) _weapon.enabled = !active;
+        if (stats != null)
+        {
+            GetComponent<Platformer2DUserControl>().enabled = !active;
+            Weapon _weapon = GetComponentInChildren<Weapon>();
+            if (_weapon != null) _weapon.enabled = !active;
+        }   
     }
 
     /*

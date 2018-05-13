@@ -46,7 +46,7 @@ public class UpgradeMenu : MonoBehaviour {
      */
     void UpdateValues()
     {
-        if(stats ==null) stats = PlayerStats.instance;
+        if(stats == null) stats = PlayerStats.instance;
         healthText.text = "HEALTH: "+ stats.maxHealth.ToString();
         speedText.text = "SPEED: "+ stats.movementSpeed.ToString();
     }
